@@ -1,7 +1,7 @@
-use day1::task1;
+use day3::star1::star2;
 
-mod day1;
+mod day3;
 
 fn main() {
-    task1();
+    star2();
 }

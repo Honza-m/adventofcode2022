@@ -4,7 +4,7 @@ use std::io::{BufRead, BufReader};
 pub fn main() {
     let mut v: Vec<usize> = Vec::new();
 
-    let f = File::open("./input.txt").expect("Couldn't open file");
+    let f = File::open("./src/bin/day1/input.txt").expect("Couldn't open file");
     let lines = BufReader::new(f).lines();
 
     let mut cal_sum: usize = 0;

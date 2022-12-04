@@ -8,11 +8,16 @@ const LETTERS: [char; 52] = [
     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
 ];
 
-pub fn star1() {
+fn main() {
+    star1();
+    star2();
+}
+
+fn star1() {
     let mut priority: u32 = 0;
     // Load input
     let lines =
-        BufReader::new(File::open("./src/day3/input.txt").expect("Couldn't open file")).lines();
+        BufReader::new(File::open("./src/bin/day3/input.txt").expect("Couldn't open file")).lines();
     // Get line
     for ruc in lines {
         let ruc = ruc.expect("Couldn't read line");
@@ -22,11 +27,11 @@ pub fn star1() {
     println!("Priority is {}", priority);
 }
 
-pub fn star2() {
+fn star2() {
     let mut priority: u32 = 0;
     // Load input
     let lines =
-        BufReader::new(File::open("./src/day3/input.txt").expect("Couldn't open file")).lines();
+        BufReader::new(File::open("./src/bin/day3/input.txt").expect("Couldn't open file")).lines();
 
     // Get groups of three
     let mut group: [HashSet<char>; 3] = [HashSet::new(), HashSet::new(), HashSet::new()];

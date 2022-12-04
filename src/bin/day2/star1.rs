@@ -1,10 +1,10 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-pub fn main() {
+pub fn star1() {
     let mut score: u32 = 0;
 
-    let f = File::open("./input.txt").expect("No found file");
+    let f = File::open("./src/bin/day2/input.txt").expect("No found file");
     let lines = BufReader::new(f).lines();
     for line in lines {
         if let Ok(s) = line {

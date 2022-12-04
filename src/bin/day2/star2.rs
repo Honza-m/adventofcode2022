@@ -1,9 +1,9 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-pub fn main() {
+pub fn star2() {
     let mut points: usize = 0;
-    let f = File::open("./input.txt").expect("No file");
+    let f = File::open("./src/bin/day2/input.txt").expect("No file");
     let lines = BufReader::new(f).lines();
     for line in lines {
         if let Ok(s) = line {
